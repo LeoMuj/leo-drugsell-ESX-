@@ -2,14 +2,6 @@ import { Delay } from './util'
 import { drawText, faceEatchOther, startItemExchangeAnimation, loadObjectInHand, randomDrug, endScript, cancelDeal } from './functions'
 import { IDrug } from '../Types';
 
-RegisterCommand('ress', function () {
-    emit('status:revive', -1);
-}, false)
-
-RegisterCommand('drug', function () {
-    emitNet('getDrugs');
-}, false)
-
 let closeToPed: boolean = false;
 let interacting: boolean = false;
 const npcsSoldTo: Array<number> = []

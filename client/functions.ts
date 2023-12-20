@@ -1,4 +1,4 @@
-import { Config } from '../config';
+import { Config } from '../server/config';
 import { IDrug } from '../Types'
 
 export const drawText = (x: number, y: number, z: number, text: string): void => {

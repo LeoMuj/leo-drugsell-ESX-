@@ -1,0 +1,133 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+    align-items: center !important;
+}
+
+.ui-elements {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.active-ui {
+    opacity: 1;
+    display: flex !important;
+}
+
+.inner-content {
+    height: 100%;
+    margin-top: 400px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.cursor-content {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    border: 10px solid #607AFF;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.mouse-pointer {
+    border: 35px solid transparent;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 100px;
+    top: 7px;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-top-color: #607AFF;
+}
+
+.interaciotn-section {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.action {
+    padding: 3px 20px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background: #39393959;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    border: 2px solid #393939;
+}
+
+.action:hover {
+    background: #3939399f;
+    border-color: #607AFF;
+}
+
+.conversation {
+    text-align: center;
+    color: white;
+    background: #39393959;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+    padding: 5px 0px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: radial-gradient(transparent, #393939a4);
+}
+
+#deal-value {
+    color: #607AFF;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    animation: progress 10s linear;
+    background-color: #607AFF;
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
